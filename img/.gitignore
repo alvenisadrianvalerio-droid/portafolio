@@ -1,0 +1,13 @@
+# Dependencias y carpetas de desarrollo
+node_modules/
+dist/
+build/
+.next/
+.venv/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración locales
+.env
