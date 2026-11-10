@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Desarrollador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">&lt;DevPortfolio /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Hola, somos <span class="highlight"> ArmstrongOdisei</span></h1>
+            <p>Un equipo indie de desarrollo web apasionado en buscar soluciones a los problemas del día a día usando el
+                arte de la programación.</p>
+            <a href="#proyectos" class="btn">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <p class="section-subtitle">Una selección de los trabajos en los que hemos participado</p>
+
+            <!-- Filtros -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <!-- Galería -->
+            <div class="grid" id="projects-grid">
+
+                <!-- Proyecto 1: ChufuERP (Imagen 3) -->
+                <article class="card" data-category="web">
+                    <div class="card-image">
+                        <img src="img/proyecto-erp.png" alt="ChufuERP" loading="lazy">
+                        <div class="overlay">
+                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>ChufuERP - Punto de Venta</h3>
+                        <p>Sistema ERP completo con gestión de inventario, cajas, compras y proveedores.</p>
+                        <div class="tags">
+                            <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2: Arte en Madera (Imagen 6) -->
+                <article class="card" data-category="web">
+                    <div class="card-image">
+                        <img src="img/proyecto-madera.jpeg" alt="Arte en Madera" loading="lazy">
+                        <div class="overlay">
+                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>E-commerce Arte en Madera</h3>
+                        <p>Tienda online para muebles artesanales con sistema de cotizaciones y pasarela de pago.</p>
+                        <div class="tags">
+                            <span>Next.js</span><span>Tailwind CSS</span><span>Stripe</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3: Perfumería (Imagen 1) -->
+                <article class="card" data-category="web">
+                    <div class="card-image">
+                        <img src="img/proyecto-perfumes.jpeg" alt="Tienda de Perfumes" loading="lazy">
+                        <div class="overlay">
+                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>E-commerce de Perfumes</h3>
+                        <p>Catálogo interactivo de fragancias con filtros por familia olfativa y ofertas.</p>
+                        <div class="tags">
+                            <span>Vue.js</span><span>CSS3</span><span>Firebase</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4: Diccionario (Imagen 2) -->
+                <article class="card" data-category="web">
+                    <div class="card-image">
+                        <img src="img/proyecto-diccionario.png" alt="Diccionario Multilíngüe" loading="lazy">
+                        <div class="overlay">
+                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Diccionario Multilíngüe</h3>
+                        <p>Buscador de palabras en múltiples idiomas con guardado de historial y gamificación.</p>
+                        <div class="tags">
+                            <span>Python</span><span>FastAPI</span><span>React</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 5: Recetas (Imagen 4) -->
+                <article class="card" data-category="web">
+                    <div class="card-image">
+                        <img src="img/proyecto-recetas.png" App de Recetas" loading="lazy">
+                        <div class="overlay">
+                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Buscador de Recetas Inteligente</h3>
+                        <p>Plataforma para buscar recetas por ingredientes o categorías con diseño moderno.</p>
+                        <div class="tags">
+                            <span>React</span><span>Spoonacular API</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 6: POS Minimarket (Imagen 5) -->
+                <article class="card" data-category="mobile">
+                    <div class="card-image">
+                        <img src="img/proyecto-minimarket-1.jpeg" alt="POS Minimarket" loading="lazy">
+                        <div class="overlay">
+                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>POS Minimarket Móvil</h3>
+                        <p>Sistema de punto de venta optimizado para móviles, con gestión de inventario, CRM de clientes
+                            y pagos en divisas.</p>
+                        <div class="tags">
+                            <span>React Native</span><span>Express</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre nosotros</h2>
+            <p class="about-text">
+                Creo páginas web, aplicaciones, programas de escritorio y proyectos digitales por encargo.
+
+                Ofrezco:
+
+                Creación de apks (aplicaciones para celulares) y webviews (páginas web) para negocios ajustados al
+                presupuesto poseído.
+
+                Mantenimiento a páginas web, aplicaciones de escritorio y servidores.
+
+                Desarrollo de paneles administrativos para empresas tanto grandes como pequeñas.
+
+                Aplicaciones de registros de ventas, nómina y registro de inventario.
+
+                Blogs, páginas web específicas, aplicaciones fitness, recetarios online, apps multi idiomas, etc.
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <div class="contact-links">
+                <a href="mailto:alvenisadrianvalerio@gmail.com" class="btn">✉ Enviar email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 ArmstrongOdisei · Hecho con ❤ y mucho café</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
