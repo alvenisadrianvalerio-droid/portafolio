@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio | Desarrollador</title>
+    <title>Mi Portafolio | ArmstrongOdisei</title>
+    <meta name="description"
+        content="Portafolio de ArmstrongOdisei: equipo indie de desarrollo web, apps móviles y soluciones digitales.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -15,146 +17,586 @@
     <!-- Header / Navegación -->
     <header class="header">
         <nav class="nav container">
-            <a href="#" class="logo">&lt;DevPortfolio /&gt;</a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <a href="#inicio" class="logo">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                </svg>
+                &lt;DevPortfolio /&gt;
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 9.5 12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" />
+                        </svg> Inicio</a></li>
+                <li><a href="#proyectos"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="7" height="7" rx="1" />
+                            <rect x="14" y="3" width="7" height="7" rx="1" />
+                            <rect x="3" y="14" width="7" height="7" rx="1" />
+                            <rect x="14" y="14" width="7" height="7" rx="1" />
+                        </svg> Proyectos</a></li>
+                <li><a href="#servicios"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.1 2.1-2.5-2.5z" />
+                        </svg> Servicios</a></li>
+                <li><a href="#stack"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m12 2 9 5-9 5-9-5 9-5z" />
+                            <path d="m3 12 9 5 9-5" />
+                            <path d="m3 17 9 5 9-5" />
+                        </svg> Stack</a></li>
+                <li><a href="#sobre-mi"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 21a8 8 0 0 1 16 0" />
+                        </svg> Sobre mí</a></li>
+                <li><a href="#contacto"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="m3 7 9 6 9-6" />
+                        </svg> Contacto</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
         </nav>
     </header>
 
     <!-- Hero -->
     <section id="inicio" class="hero">
-        <div class="container hero-content">
-            <h1>Hola, somos <span class="highlight"> ArmstrongOdisei</span></h1>
+        <div class="container hero-content reveal">
+            <h1>
+                <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 20s0-4 5-4 5 4 5 4" />
+                    <circle cx="12" cy="7" r="4" />
+                </svg>
+                Hola, somos <span class="highlight">ArmstrongOdisei</span>
+            </h1>
             <p>Un equipo indie de desarrollo web apasionado en buscar soluciones a los problemas del día a día usando el
                 arte de la programación.</p>
-            <a href="#proyectos" class="btn">Ver mis proyectos</a>
+            <a href="#proyectos" class="btn">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+                Ver mis proyectos
+            </a>
+            <a href="#crear" class="btn btn-outline">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+                Añadir proyecto
+            </a>
         </div>
     </section>
 
     <!-- Proyectos -->
     <section id="proyectos" class="projects">
         <div class="container">
-            <h2 class="section-title">Mis Proyectos</h2>
-            <p class="section-subtitle">Una selección de los trabajos en los que hemos participado</p>
+            <h2 class="section-title reveal">
+                <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 7h16v13H4z" />
+                    <path d="M9 7V4h6v3" />
+                </svg>
+                Mis Proyectos
+            </h2>
+            <p class="section-subtitle reveal">Una selección de los trabajos en los que hemos participado</p>
 
-            <!-- Filtros -->
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <div class="filters reveal">
+                <button class="filter-btn active" data-filter="all">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg> Todos
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+                    </svg> Web
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="7" y="2" width="10" height="20" rx="2" />
+                        <line x1="11" y1="18" x2="13" y2="18" />
+                    </svg> Mobile
+                </button>
+                <button class="filter-btn" data-filter="custom">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 2 15 9l7 .5-5.5 4.5L18 21l-6-4-6 4 1.5-7L2 9.5 9 9z" />
+                    </svg> Personalizados
+                </button>
             </div>
 
-            <!-- Galería -->
             <div class="grid" id="projects-grid">
 
-                <!-- Proyecto 1: ChufuERP (Imagen 3) -->
-                <article class="card" data-category="web">
+                <article class="card reveal" data-category="web" data-fixed-id="erp">
+                    <div class="card-actions">
+                        <button class="card-edit" title="Editar proyecto" data-fixed-id="erp">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+                            </svg>
+                        </button>
+                        <button class="card-delete" title="Eliminar proyecto" data-fixed-id="erp">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
                     <div class="card-image">
                         <img src="img/proyecto-erp.png" alt="ChufuERP" loading="lazy">
                         <div class="overlay">
-                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                            <button class="btn-view" data-title="ChufuERP - Punto de Venta"
+                                data-desc="Sistema ERP completo con gestión de inventario, cajas, compras y proveedores."
+                                data-img="img/proyecto-erp.png">
+                                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                     <div class="card-body">
                         <h3>ChufuERP - Punto de Venta</h3>
                         <p>Sistema ERP completo con gestión de inventario, cajas, compras y proveedores.</p>
-                        <div class="tags">
-                            <span>React</span><span>Node.js</span><span>PostgreSQL</span>
-                        </div>
+                        <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
                     </div>
                 </article>
 
-                <!-- Proyecto 2: Arte en Madera (Imagen 6) -->
-                <article class="card" data-category="web">
+                <article class="card reveal" data-category="web" data-fixed-id="madera">
+                    <div class="card-actions">
+                        <button class="card-edit" title="Editar proyecto" data-fixed-id="madera">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+                            </svg>
+                        </button>
+                        <button class="card-delete" title="Eliminar proyecto" data-fixed-id="madera">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
                     <div class="card-image">
                         <img src="img/proyecto-madera.jpeg" alt="Arte en Madera" loading="lazy">
                         <div class="overlay">
-                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                            <button class="btn-view" data-title="E-commerce Arte en Madera"
+                                data-desc="Tienda online para muebles artesanales con sistema de cotizaciones y pasarela de pago."
+                                data-img="img/proyecto-madera.jpeg">
+                                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                     <div class="card-body">
                         <h3>E-commerce Arte en Madera</h3>
                         <p>Tienda online para muebles artesanales con sistema de cotizaciones y pasarela de pago.</p>
-                        <div class="tags">
-                            <span>Next.js</span><span>Tailwind CSS</span><span>Stripe</span>
-                        </div>
+                        <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>Stripe</span></div>
                     </div>
                 </article>
 
-                <!-- Proyecto 3: Perfumería (Imagen 1) -->
-                <article class="card" data-category="web">
+                <article class="card reveal" data-category="web" data-fixed-id="perfumes">
+                    <div class="card-actions">
+                        <button class="card-edit" title="Editar proyecto" data-fixed-id="perfumes">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+                            </svg>
+                        </button>
+                        <button class="card-delete" title="Eliminar proyecto" data-fixed-id="perfumes">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
                     <div class="card-image">
                         <img src="img/proyecto-perfumes.jpeg" alt="Tienda de Perfumes" loading="lazy">
                         <div class="overlay">
-                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                            <button class="btn-view" data-title="E-commerce de Perfumes"
+                                data-desc="Catálogo interactivo de fragancias con filtros por familia olfativa y ofertas."
+                                data-img="img/proyecto-perfumes.jpeg">
+                                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                     <div class="card-body">
                         <h3>E-commerce de Perfumes</h3>
                         <p>Catálogo interactivo de fragancias con filtros por familia olfativa y ofertas.</p>
-                        <div class="tags">
-                            <span>Vue.js</span><span>CSS3</span><span>Firebase</span>
-                        </div>
+                        <div class="tags"><span>Vue.js</span><span>CSS3</span><span>Firebase</span></div>
                     </div>
                 </article>
 
-                <!-- Proyecto 4: Diccionario (Imagen 2) -->
-                <article class="card" data-category="web">
+                <article class="card reveal" data-category="web" data-fixed-id="diccionario">
+                    <div class="card-actions">
+                        <button class="card-edit" title="Editar proyecto" data-fixed-id="diccionario">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+                            </svg>
+                        </button>
+                        <button class="card-delete" title="Eliminar proyecto" data-fixed-id="diccionario">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
                     <div class="card-image">
                         <img src="img/proyecto-diccionario.png" alt="Diccionario Multilíngüe" loading="lazy">
                         <div class="overlay">
-                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                            <button class="btn-view" data-title="Diccionario Multilíngüe"
+                                data-desc="Buscador de palabras en múltiples idiomas con guardado de historial y gamificación."
+                                data-img="img/proyecto-diccionario.png">
+                                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                     <div class="card-body">
                         <h3>Diccionario Multilíngüe</h3>
                         <p>Buscador de palabras en múltiples idiomas con guardado de historial y gamificación.</p>
-                        <div class="tags">
-                            <span>Python</span><span>FastAPI</span><span>React</span>
-                        </div>
+                        <div class="tags"><span>Python</span><span>FastAPI</span><span>React</span></div>
                     </div>
                 </article>
 
-                <!-- Proyecto 5: Recetas (Imagen 4) -->
-                <article class="card" data-category="web">
+                <article class="card reveal" data-category="web" data-fixed-id="recetas">
+                    <div class="card-actions">
+                        <button class="card-edit" title="Editar proyecto" data-fixed-id="recetas">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+                            </svg>
+                        </button>
+                        <button class="card-delete" title="Eliminar proyecto" data-fixed-id="recetas">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
                     <div class="card-image">
-                        <img src="img/proyecto-recetas.png" App de Recetas" loading="lazy">
+                        <img src="img/proyecto-recetas.png" alt="App de Recetas" loading="lazy">
                         <div class="overlay">
-                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                            <button class="btn-view" data-title="Buscador de Recetas Inteligente"
+                                data-desc="Plataforma para buscar recetas por ingredientes o categorías con diseño moderno."
+                                data-img="img/proyecto-recetas.png">
+                                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                     <div class="card-body">
                         <h3>Buscador de Recetas Inteligente</h3>
                         <p>Plataforma para buscar recetas por ingredientes o categorías con diseño moderno.</p>
-                        <div class="tags">
-                            <span>React</span><span>Spoonacular API</span>
-                        </div>
+                        <div class="tags"><span>React</span><span>Spoonacular API</span></div>
                     </div>
                 </article>
 
-                <!-- Proyecto 6: POS Minimarket (Imagen 5) -->
-                <article class="card" data-category="mobile">
+                <article class="card reveal" data-category="mobile" data-fixed-id="minimarket">
+                    <div class="card-actions">
+                        <button class="card-edit" title="Editar proyecto" data-fixed-id="minimarket">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+                            </svg>
+                        </button>
+                        <button class="card-delete" title="Eliminar proyecto" data-fixed-id="minimarket">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
                     <div class="card-image">
                         <img src="img/proyecto-minimarket-1.jpeg" alt="POS Minimarket" loading="lazy">
                         <div class="overlay">
-                            <a href="#" class="btn-view" target="_blank">Ver detalles</a>
+                            <button class="btn-view" data-title="POS Minimarket Móvil"
+                                data-desc="Sistema de punto de venta optimizado para móviles, con gestión de inventario, CRM de clientes y pagos en divisas."
+                                data-img="img/proyecto-minimarket-1.jpeg">
+                                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                     <div class="card-body">
                         <h3>POS Minimarket Móvil</h3>
                         <p>Sistema de punto de venta optimizado para móviles, con gestión de inventario, CRM de clientes
                             y pagos en divisas.</p>
-                        <div class="tags">
-                            <span>React Native</span><span>Express</span><span>MySQL</span>
-                        </div>
+                        <div class="tags"><span>React Native</span><span>Express</span><span>MySQL</span></div>
                     </div>
                 </article>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Panel para crear / editar proyecto -->
+    <section id="crear" class="creator">
+        <div class="container">
+            <h2 class="section-title reveal" id="creatorTitle">
+                <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+                Añadir proyecto personalizado
+            </h2>
+            <p class="section-subtitle reveal" id="creatorSubtitle">Arrastra una imagen, ponle título y descripción. Se
+                guardará en tu navegador.</p>
+
+            <div class="creator-box reveal">
+                <div id="dropZone" class="drop-zone">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <p class="drop-text">
+                        <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Arrastra una imagen aquí, <span class="link">haz clic para seleccionar</span> o pégala con
+                        <kbd>Ctrl</kbd>+<kbd>V</kbd>
+                    </p>
+                    <img id="preview" class="preview" alt="Vista previa" hidden>
+                </div>
+
+                <form id="projectForm" class="project-form">
+                    <label>
+                        Título
+                        <input type="text" id="titleInput" placeholder="Ej: Mi app de finanzas" required maxlength="60">
+                    </label>
+                    <label>
+                        Descripción
+                        <textarea id="descInput" rows="3" placeholder="Describe tu proyecto..." required
+                            maxlength="200"></textarea>
+                    </label>
+                    <label>
+                        Categoría
+                        <select id="categoryInput">
+                            <option value="custom">Personalizado</option>
+                            <option value="web">Web</option>
+                            <option value="mobile">Mobile</option>
+                        </select>
+                    </label>
+                    <div class="form-actions">
+                        <button type="submit" class="btn" id="submitBtn">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
+                                <polyline points="17 21 17 13 7 13 7 21" />
+                                <polyline points="7 3 7 8 15 8" />
+                            </svg>
+                            Guardar proyecto
+                        </button>
+                        <button type="button" id="cancelEditBtn" class="btn btn-outline" hidden>
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                            Cancelar edición
+                        </button>
+                        <button type="button" id="clearBtn" class="btn btn-outline">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 6h18" />
+                                <path d="M8 6V4h8v2" />
+                                <path d="M6 6l1 14h10l1-14" />
+                            </svg>
+                            Limpiar
+                        </button>
+                    </div>
+                    <p class="hint" id="formHint"></p>
+                </form>
+            </div>
+
+            <div class="restore-wrap">
+                <button type="button" id="restoreBtn" class="btn btn-outline">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 12a9 9 0 1 0 3-6.7" />
+                        <polyline points="3 4 3 10 9 10" />
+                    </svg>
+                    Restaurar proyectos originales
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.1 2.1-2.5-2.5z" />
+                </svg>
+                Servicios
+            </h2>
+            <p class="section-subtitle reveal">Lo que podemos hacer por tu negocio</p>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="7" y="2" width="10" height="20" rx="2" />
+                            <line x1="11" y1="18" x2="13" y2="18" />
+                        </svg>
+                    </div>
+                    <h3>APKs & Webviews</h3>
+                    <p>Aplicaciones para celulares y webviews para negocios ajustadas a tu presupuesto.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.1 2.1-2.5-2.5z" />
+                        </svg>
+                    </div>
+                    <h3>Mantenimiento</h3>
+                    <p>Soporte a páginas web, aplicaciones de escritorio y servidores.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 3v18h18" />
+                            <rect x="7" y="12" width="3" height="6" />
+                            <rect x="12" y="8" width="3" height="10" />
+                            <rect x="17" y="5" width="3" height="13" />
+                        </svg>
+                    </div>
+                    <h3>Paneles administrativos</h3>
+                    <p>Desarrollo de paneles para empresas grandes y pequeñas.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 8 12 3 3 8l9 5 9-5z" />
+                            <path d="M3 8v8l9 5 9-5V8" />
+                            <path d="M12 13v8" />
+                        </svg>
+                    </div>
+                    <h3>Registros & Inventario</h3>
+                    <p>Aplicaciones de ventas, nómina y control de inventario.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+                        </svg>
+                    </div>
+                    <h3>Sitios & Blogs</h3>
+                    <p>Blogs, páginas específicas, recetarios online y apps multiidioma.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M6.5 6.5c2-2 4-1 5.5.5 1.5-1.5 3.5-2.5 5.5-.5 2 2 2 5 0 7L12 20l-5.5-6.5c-2-2-2-5 0-7z" />
+                        </svg>
+                    </div>
+                    <h3>Apps fitness</h3>
+                    <p>Aplicaciones de salud y fitness adaptadas a tus necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="stack">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m12 2 9 5-9 5-9-5 9-5z" />
+                    <path d="m3 12 9 5 9-5" />
+                    <path d="m3 17 9 5 9-5" />
+                </svg>
+                Stack / Habilidades
+            </h2>
+            <p class="section-subtitle reveal">Tecnologías que usamos día a día</p>
+
+            <div class="stack-grid reveal">
+                <span class="stack-badge">HTML5</span>
+                <span class="stack-badge">CSS3</span>
+                <span class="stack-badge">JavaScript</span>
+                <span class="stack-badge">React</span>
+                <span class="stack-badge">Next.js</span>
+                <span class="stack-badge">Vue.js</span>
+                <span class="stack-badge">React Native</span>
+                <span class="stack-badge">Node.js</span>
+                <span class="stack-badge">Express</span>
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">FastAPI</span>
+                <span class="stack-badge">PostgreSQL</span>
+                <span class="stack-badge">MySQL</span>
+                <span class="stack-badge">Firebase</span>
+                <span class="stack-badge">Tailwind CSS</span>
+                <span class="stack-badge">Git</span>
             </div>
         </div>
     </section>
@@ -162,40 +604,92 @@
     <!-- Sobre mí -->
     <section id="sobre-mi" class="about">
         <div class="container">
-            <h2 class="section-title">Sobre nosotros</h2>
-            <p class="about-text">
-                Creo páginas web, aplicaciones, programas de escritorio y proyectos digitales por encargo.
-
-                Ofrezco:
-
-                Creación de apks (aplicaciones para celulares) y webviews (páginas web) para negocios ajustados al
-                presupuesto poseído.
-
-                Mantenimiento a páginas web, aplicaciones de escritorio y servidores.
-
-                Desarrollo de paneles administrativos para empresas tanto grandes como pequeñas.
-
-                Aplicaciones de registros de ventas, nómina y registro de inventario.
-
-                Blogs, páginas web específicas, aplicaciones fitness, recetarios online, apps multi idiomas, etc.
+            <h2 class="section-title reveal">
+                <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 21a8 8 0 0 1 16 0" />
+                </svg>
+                Sobre nosotros
+            </h2>
+            <p class="about-text reveal">
+                Somos ArmstrongOdisei, un equipo indie que crea páginas web, aplicaciones, programas de escritorio y
+                proyectos digitales por encargo. Nos enfocamos en soluciones prácticas, bien hechas y ajustadas a tu
+                presupuesto.
+            </p>
         </div>
     </section>
 
     <!-- Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-            <div class="contact-links">
-                <a href="mailto:alvenisadrianvalerio@gmail.com" class="btn">✉ Enviar email</a>
+            <h2 class="section-title reveal">
+                <svg class="ico ico-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 6 9-6" />
+                </svg>
+                Contacto
+            </h2>
+            <p class="reveal">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <div class="contact-links reveal">
+                <a href="mailto:alvenisadrianvalerio@gmail.com" class="btn">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <path d="m3 7 9 6 9-6" />
+                    </svg>
+                    Enviar email
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline">
+                    <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.74 1.27 3.41.97.1-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.69.42.36.79 1.08.79 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://wa.me/" target="_blank" rel="noopener" class="btn btn-outline">
+                    <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M20.5 3.5A11 11 0 0 0 3.6 17.3L2 22l4.8-1.5A11 11 0 0 0 12 22a10.9 10.9 0 0 0 8.5-18.5zM12 20.2a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.9.9-2.7-.2-.3A9 9 0 1 1 12 20.2zm5-6.7c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 1.1-.4.2-.6.1a7.3 7.3 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-1-2.3-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4A3.7 3.7 0 0 0 5.6 9c0 1.6 1.1 3.2 1.3 3.4s2.3 3.6 5.6 5c.8.3 1.4.5 1.9.6a4.6 4.6 0 0 0 2.1.1 3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.3z" />
+                    </svg>
+                    WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2025 ArmstrongOdisei · Hecho con ❤ y mucho café</p>
-    </footer>
+    <!-- Modal de proyecto -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <img id="modalImg" alt="Imagen del proyecto">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
 
+    <!-- Volver arriba -->
+    <button id="toTop" class="to-top" aria-label="Volver arriba">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+        </svg>
+    </button>
+
+    <footer class="footer">
+        <p>
+            © 2025 ArmstrongOdisei ·
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 </body>
 
